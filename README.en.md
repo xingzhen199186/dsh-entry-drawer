@@ -38,6 +38,10 @@ The choice is remembered. Reload the page or restart the desktop app and your la
 
 One thing was checked on a real machine rather than assumed: on 2026-11-05, on desktop 0.2.1-rc.5, folding and unfolding both worked, and a third-party entry added afterwards was folded along with the rest — no reconfiguration of this plugin needed.
 
+<img width="283" height="330" alt="Sidebar with the entry drawer expanded" src="https://github.com/user-attachments/assets/e53c49fa-663c-497f-9ea2-55674987f9cb" />
+
+<img width="282" height="301" alt="Sidebar with the entry drawer folded" src="https://github.com/user-attachments/assets/1c44eba4-a1b9-4c13-8b25-62e34bdb9d6c" />
+
 ## Install
 
 Requirements: DSH 0.2.x, plus a working Node.js and pnpm (`dsh plugin` is a thin pnpm wrapper).
