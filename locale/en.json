@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sidebar Entry Drawer",
+    "description": "Turns the top of the left sidebar's entry list into one switch that folds every entry away and brings it back, leaving the session history more room."
+  }
+}

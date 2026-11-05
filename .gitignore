@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Packaged tarballs
+*.tgz
+*.tgz.bak-*
+
+# Local working notes: written for this machine, not part of the public project.
+# (说明.md and tasks/ are this workspace's own archive conventions.)
+说明.md
+AGENTS.md
+tasks/
+
+# Local caches and verification output
+.cache/
+coverage/
+.vitest/
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
