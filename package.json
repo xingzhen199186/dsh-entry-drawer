@@ -1,7 +1,6 @@
 {
   "name": "dsh-entry-drawer",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Folds the left sidebar's global panel entries behind one switch so session history keeps its room.",
   "license": "MIT",
@@ -32,6 +31,13 @@
     "icon.svg",
     "README.md"
   ],
+  "scripts": {
+    "test": "node test/client.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
