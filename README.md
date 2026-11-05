@@ -3,6 +3,7 @@
 **简体中文** · [English](README.en.md) · [安装](#安装) · [它是怎么做到的](#它是怎么做到的) · [已知限制](#已知限制) · [许可](#许可)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-2EA44F?style=flat-square)](LICENSE)
+[![npm](https://img.shields.io/npm/v/dsh-entry-drawer?style=flat-square)](https://www.npmjs.com/package/dsh-entry-drawer)
 [![release](https://img.shields.io/github/v/tag/xingzhen199186/dsh-entry-drawer?style=flat-square&label=release)](https://github.com/xingzhen199186/dsh-entry-drawer/releases)
 [![DSH plugin](https://img.shields.io/badge/DSH%20plugin-dsh--plugin-3f8cff?style=flat-square)](https://github.com/topics/dsh-plugin)
 ![dsh 0.2.x](https://img.shields.io/badge/dsh-0.2.x-2f6f4f?style=flat-square)
@@ -46,15 +47,23 @@ DSH 左侧栏上半部分是一列「全局面板入口」：插件、插件市�
 
 前提：DSH 0.2.x，以及可用的 Node.js 与 pnpm（`dsh plugin` 只是 pnpm 的转发器）。
 
-**方式一：从 GitHub 安装（推荐）**
+**方式一：从 npm 安装（推荐）**
+
+```sh
+dsh plugin --profile web add dsh-entry-drawer
+```
+
+`web` 换成你实际在用的 profile 名。包名就是 `dsh-entry-drawer`，npm 上是 0.1.0。
+
+**方式二：从 GitHub 安装**
 
 ```sh
 dsh plugin --profile web add github:xingzhen199186/dsh-entry-drawer
 ```
 
-`web` 换成你实际在用的 profile 名。
+适合跟最新代码，或 npm 还没同步到新版时。
 
-**方式二：从本地目录安装**
+**方式三：从本地目录安装**
 
 ```sh
 dsh plugin --profile web add ./dsh-entry-drawer
@@ -64,9 +73,7 @@ dsh plugin --profile web add ./dsh-entry-drawer
 
 **装完要重载。** Web 端刷新页面即可；桌面端建议直接重启应用。跑在浏览器里的那一半（`client.js`）要等窗口重新加载才会挂上，桌面端默认没有客户端热更新。
 
-**桌面端请优先在应用内安装。** 桌面端的 profile 由应用自己托管，命令行写入一般会被拒绝（提示该 profile 只由桌面应用管理），这不是权限问题。在那边的「插件」页面填仓库地址或本机目录即可。
-
-这个包没有发布到 npm（`package.json` 里 `private: true`），所以用 npm 包名装不上。
+**桌面端请优先在应用内安装。** 桌面端的 profile 由应用自己托管，命令行写入一般会被拒绝（提示该 profile 只由桌面应用管理），这不是权限问题。在那边的「插件」页面填包名、仓库地址或本机目录即可。
 
 ## 卸载
 

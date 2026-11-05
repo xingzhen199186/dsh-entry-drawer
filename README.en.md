@@ -3,6 +3,7 @@
 [简体中文](README.md) · **English** · [Install](#install) · [How it works](#how-it-works) · [Known limits](#known-limits) · [License](#license)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-2EA44F?style=flat-square)](LICENSE)
+[![npm](https://img.shields.io/npm/v/dsh-entry-drawer?style=flat-square)](https://www.npmjs.com/package/dsh-entry-drawer)
 [![release](https://img.shields.io/github/v/tag/xingzhen199186/dsh-entry-drawer?style=flat-square&label=release)](https://github.com/xingzhen199186/dsh-entry-drawer/releases)
 [![DSH plugin](https://img.shields.io/badge/DSH%20plugin-dsh--plugin-3f8cff?style=flat-square)](https://github.com/topics/dsh-plugin)
 ![dsh 0.2.x](https://img.shields.io/badge/dsh-0.2.x-2f6f4f?style=flat-square)
@@ -46,15 +47,23 @@ One thing was checked on a real machine rather than assumed: on 2026-11-05, on d
 
 Requirements: DSH 0.2.x, plus a working Node.js and pnpm (`dsh plugin` is a thin pnpm wrapper).
 
-**Option 1: install from GitHub (recommended)**
+**Option 1: install from npm (recommended)**
+
+```sh
+dsh plugin --profile web add dsh-entry-drawer
+```
+
+Replace `web` with the profile you actually use. The package name is `dsh-entry-drawer`; npm carries 0.1.0.
+
+**Option 2: install from GitHub**
 
 ```sh
 dsh plugin --profile web add github:xingzhen199186/dsh-entry-drawer
 ```
 
-Replace `web` with the profile you actually use.
+Use this to follow the latest code, or while npm has not caught up with a new version.
 
-**Option 2: install from a local directory**
+**Option 3: install from a local directory**
 
 ```sh
 dsh plugin --profile web add ./dsh-entry-drawer
@@ -64,9 +73,7 @@ The plugin manager's "install from directory" does the same thing if you prefer 
 
 **Reload afterwards.** On the web, refresh the page. On the desktop app, restart it. The half that runs in the browser (`client.js`) only mounts when the window loads again, and the desktop app has no client-side hot reload by default.
 
-**On the desktop app, prefer installing from inside the app.** Its profile is managed by the application itself, so a command-line write is normally refused (it reports that the profile is managed by the desktop app); that is not a permissions problem. Use the Plugins page there and enter the repository address or the local folder.
-
-The package is not published to npm (`package.json` sets `private: true`), so it cannot be installed by package name.
+**On the desktop app, prefer installing from inside the app.** Its profile is managed by the application itself, so a command-line write is normally refused (it reports that the profile is managed by the desktop app); that is not a permissions problem. Use the Plugins page there and enter the package name, the repository address, or the local folder.
 
 ## Uninstall
 
