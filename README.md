@@ -37,6 +37,10 @@ DSH 左侧栏上半部分是一列「全局面板入口」：插件、插件市�
 
 有一条已经实测过的行为，可以提前说清楚：2026-11-05 在桌面端 0.2.1-rc.5 上验证过，先收起再展开都正常；之后新装的第三方插件多出来的入口，也会被一起收进去，不需要为它重新配置。
 
+<img width="291" height="505" alt="1793885948800" src="https://github.com/user-attachments/assets/643af9b3-e089-47e3-91ab-fb65be9cdceb" />
+
+<img width="282" height="301" alt="1793885963356" src="https://github.com/user-attachments/assets/1c44eba4-a1b9-4c13-8b25-62e34bdb9d6c" />
+
 ## 安装
 
 前提：DSH 0.2.x，以及可用的 Node.js 与 pnpm（`dsh plugin` 只是 pnpm 的转发器）。
