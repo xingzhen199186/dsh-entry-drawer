@@ -3,6 +3,7 @@
 [简体中文](README.md) · **English** · [Install](#install) · [How it works](#how-it-works) · [Known limits](#known-limits) · [License](#license)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-2EA44F?style=flat-square)](LICENSE)
+[![release](https://img.shields.io/github/v/tag/xingzhen199186/dsh-entry-drawer?style=flat-square&label=release)](https://github.com/xingzhen199186/dsh-entry-drawer/releases)
 [![DSH plugin](https://img.shields.io/badge/DSH%20plugin-dsh--plugin-3f8cff?style=flat-square)](https://github.com/topics/dsh-plugin)
 ![dsh 0.2.x](https://img.shields.io/badge/dsh-0.2.x-2f6f4f?style=flat-square)
 ![no build step](https://img.shields.io/badge/build%20step-none-7da1de?style=flat-square)

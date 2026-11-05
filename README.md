@@ -3,6 +3,7 @@
 **简体中文** · [English](README.en.md) · [安装](#安装) · [它是怎么做到的](#它是怎么做到的) · [已知限制](#已知限制) · [许可](#许可)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-2EA44F?style=flat-square)](LICENSE)
+[![release](https://img.shields.io/github/v/tag/xingzhen199186/dsh-entry-drawer?style=flat-square&label=release)](https://github.com/xingzhen199186/dsh-entry-drawer/releases)
 [![DSH plugin](https://img.shields.io/badge/DSH%20plugin-dsh--plugin-3f8cff?style=flat-square)](https://github.com/topics/dsh-plugin)
 ![dsh 0.2.x](https://img.shields.io/badge/dsh-0.2.x-2f6f4f?style=flat-square)
 ![no build step](https://img.shields.io/badge/build%20step-none-7da1de?style=flat-square)
